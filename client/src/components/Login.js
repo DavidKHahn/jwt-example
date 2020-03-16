@@ -17,6 +17,16 @@ export default class Login extends Component {
         })
     }
 
+    // checkUserJwtButton() {
+    //     return (
+    //         <Button
+    //             text={'Check User Auth'}
+    //             iconName={'add'}
+    //             onClick={this.checkUser}
+    //         />
+    //     )
+    // }
+
     submit = (e) => {
         e.preventDefault();
         axios.post('/getToken', {
